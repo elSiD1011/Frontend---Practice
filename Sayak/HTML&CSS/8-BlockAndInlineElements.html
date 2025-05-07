@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Block And Inline Elements</title>
+    <link rel="stylesheet" href="8-displayproperty.css" />
+  </head>
+  <style>
+    .gallery {
+      text-align: center;
+    }
+    .gallery-item {
+      display: inline-block;
+      margin: 10px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 200px;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+    }
+    .gallery-item p {
+      margin: 5px 0 0;
+    }
+  </style>
+  <body>
+    <h2>Display Block Css Property</h2>
+    <p>
+      Defination :- A block-level element always starts on a new line and takes
+      up the full width available (stretches out to the left and right as far as
+      it can).
+    </p>
+    <div>
+      <div class="block">Block Element 1</div>
+      <div class="block">Block Element 2</div>
+      <div class="block">Block Element 3</div>
+      <div class="block">Block Element 4</div>
+    </div>
+    <h2>Diplay Inline Css Property</h2>
+    <p>
+        Defination :- An inline element does not start on a new line and only
+        takes up as much width as necessary.
+    </p>
+    <div>
+      <div class="inline">Inline Element 1</div>
+      <div class="inline">Inline Element 2</div>
+      <div class="inline">Inline Element 3</div>
+      <div class="inline">Inline Element 4</div>
+    </div>
+
+    <h2>Display Inline Block Css Property</h2>
+    <p>
+        Defination :- An inline-block element is placed as an inline element
+        (on the same line as adjacent content), but it behaves as a block
+        element.
+    </p>
+    <div>
+      <div class="inline-block">Inline Block Element 1</div>
+      <div class="inline-block">Inline Block Element 2</div>
+      <div class="inline-block">Inline Block Element 3</div>
+      <div class="inline-block">Inline Block Element 4</div>
+    </div>
+
+    <h2>Image Gallery Using Inline-Block</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="Sid.jpg" alt="Image 1">
+        <p>Caption for Image 1</p>
+      </div>
+      <div class="gallery-item">
+        <img src="Sid.jpg" alt="Image 2">
+        <p>Caption for Image 2</p>
+      </div>
+      <div class="gallery-item">
+        <img src="Sid.jpg" alt="Image 3">
+        <p>Caption for Image 3</p>
+      </div>
+      <div class="gallery-item">
+        <img src="Sid.jpg" alt="Image 4">
+        <p>Caption for Image 4</p>
+      </div>
+  </body>
+</html>

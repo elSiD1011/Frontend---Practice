@@ -1,0 +1,118 @@
+/* Header Section */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  /* <weight>: Use a value from 100 to 900
+  <uniquifier>: Use a unique and descriptive class name */
+
+.roboto-font {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  color: black;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+  line-height: 1.5;
+}
+  
+  .navbar {
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%; */
+  }
+
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .nav-links li a:hover {
+    color: tomato;
+  }
+
+  /* Footer Section */
+  .footer {
+    background-color: black;
+    color: white;
+    padding: 40px 0 20px;
+    margin-top: 50px;
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-content {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px 20px;
+  }
+  
+  .footer-item {
+    margin-bottom: 20px;
+    min-width: 250px;
+  }
+  
+  .footer-item h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-item ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-item ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-item ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .footer-item ul li a:hover {
+    color: orange;
+  }
+  
+  .social-link a {
+    margin-right: 15px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid white;
+    color: white;
+  }
+
+  .main_content{
+    padding: 40px;
+  }

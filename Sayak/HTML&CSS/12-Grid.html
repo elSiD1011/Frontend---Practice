@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <link rel="stylesheet" href="12-Grid.css" />
+  </head>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      background-color: #f0f0f0;
+      padding: 10px;
+    }
+
+    .item {
+      background-color: #4caf50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container .item:nth-child(16) {
+      grid-column: 2 / 3; /* Center horizontally in the grid */
+      grid-row: auto; /* Keep its row position */
+      justify-self: center; /* Center horizontally within the column */
+      align-self: center; /* Center vertically within the row */
+      width: 92%;
+      background-color: blue;
+    }
+
+  </style>
+  <body>
+    <!---Grid Tutorial-->
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">6</div>
+      <div class="item">6</div>
+      <div class="item">6</div>
+      <div class="item">6</div>
+      <div class="item">6</div>
+      <div class="item">6</div>
+      <div class="item">6</div>
+      <div class="item">6</div>
+      <div class="item">6</div>
+      <div class="item">6</div>
+    </div>
+  </body>
+</html>

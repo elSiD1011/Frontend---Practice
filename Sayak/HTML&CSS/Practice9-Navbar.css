@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .NavbarHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: #e6e6e6;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: #e6e6e6;  
+    gap: 20px;
+  }
+
+  .NavbarHeader .nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .NavbarHeader .nav-links ul > li > a {
+    text-decoration: none;
+    color: yellowgreen;
+  }
+  
+  .NavbarHeader .nav-links ul > li > a:hover {
+    color: orange;
+  }
+  
+  .NavbarHeader #signup p > a{        /* "#" used for IDs and "." used for classes */
+    text-decoration: none;
+    color: seagreen;
+  }
+  
+  

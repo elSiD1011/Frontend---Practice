@@ -1,0 +1,42 @@
+/* General Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: center; /* Center-aligns the items horizontally */
+    align-items: center;    /* Vertically centers the items */
+    padding: 10px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* First Navbar */
+  .primary-navbar {
+    background-color: black;
+  }
+  
+  .primary-navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 15px;
+    transition: background-color 0.3s;
+  }
+  
+  .primary-navbar a:hover {
+    background-color: #555;
+  }
+  
+  /* Second Navbar */
+  .secondary-navbar {
+    background-color: grey;
+  }
+  
+  .secondary-navbar a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 15px;
+    transition: background-color 0.3s;
+  }
+  
+  .secondary-navbar a:hover {
+    background-color: #ccc;
+  }

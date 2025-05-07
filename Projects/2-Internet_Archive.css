@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center; /* Center-aligns the items horizontally */
+  align-items: center;    /* Vertically centers the items */
+  font-family: Arial, sans-serif;
+}
+
+.primary-navbar {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.primary-navbar-links {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.primary-navbar-links p > a {
+  text-decoration: none;
+  color: #f0c14b;
+}
+
+.primary-navbar-links p > a:hover {
+  color: chocolate;
+}
+
+.primary-navbar div {
+  display: flex;
+  align-items: center;
+}
+
+.primary-navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.primary-navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.primary-navbar ul li a:hover {
+  color: #f0c14b;
+}
+
+/* Secondary Navbar */
+.secondary-navbar {
+  background-color: gray;
+  padding: 0.5rem 2rem;
+}
+
+.secondary-navbar ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.secondary-navbar ul li a {
+  text-decoration: none;
+  color: #ddd;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.secondary-navbar ul li a:hover {
+  color: white;
+}

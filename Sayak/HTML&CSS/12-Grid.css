@@ -1,0 +1,18 @@
+.container {
+  display: grid; /* This line defines the container as a CSS grid layout. */
+  grid-template-columns: repeat(2, 1fr);
+  gap:10px;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.item {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* This line defines the column structure of a CSS grid layout.
+   - 'grid-template-columns': Specifies the number and size of columns in the grid.
+   - 'repeat(3, 1fr)': Creates 3 columns, each taking up an equal fraction of the available space (1fr stands for one fraction unit). */

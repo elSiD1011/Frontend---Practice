@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Display Tutorial</title>
+    <link rel="stylesheet" href="7-Practice6.css" />
+  </head>
+
+  <style>
+    .inline {
+      display: inline;
+      margin: 5px;
+      padding: 10px;
+      background-color: #d12121;
+      color: white;
+      border: 1px solid #ccc;
+    }
+  </style>
+
+  <body>
+    <!---Display CSS Property Tutotial-->
+
+    <div class="container" style="display: block">
+      <h1>Display Block CSS Property</h1>
+      <h2>Block Level Elements</h2>
+      <p style="background-color: chartreuse">
+        Block-level elements always start on a new line and take up the full
+        width available (stretches out to the left and right as far as it can).
+      </p>
+      <div style="background-color: lightblue">
+        <p>This is a paragraph.</p>
+        <p>This is a paragraph.</p>
+      </div>
+    </div>
+
+    <!---CSS Tutorial-->
+
+    <div class="container" style="display: block">
+      <h1>Display Block CSS Property</h1>
+      <h2>Block Level Element</h2>
+      <p>
+        <b
+          >Block level elements start with a new line and take up the entire
+          width. The next P Tag will start from the next line. Stretching from
+          left to right as far as it can be</b
+        >
+      </p>
+      <p>This is an example</p>
+      <p>
+        This is another line below without using the br tag. This is because the
+        Block tag automatically pushes the next p tag below.
+      </p>
+    </div>
+
+    <!--- Using ID and Container-->
+
+    <div class="container" style="display: block">
+      <h1>Display Block CSS Property</h1>
+      <h2>Block Level Element</h2>
+      <p>
+        <b
+          >Block level elements start with a new line and take up the entire
+          width. The next P Tag will start from the next line. Stretching from
+          left to right as far as it can be</b
+        >
+      </p>
+      <p>This is an example</p>
+      <p>
+        This is another line below without using the br tag. This is because the
+        Block tag automatically pushes the next p tag below.
+      </p>
+    </div>
+
+    <!--- Display inline Property-->
+
+    <div class="container" style="display: block">
+      <h1>Display Inline CSS Property</h1>
+      <h2>Inline Level Elements</h2>
+      <p>
+        Inline elements do not start on a new line and only take up as much
+        width as necessary. The .inline class sets the display property to
+        inline, which allows the div elements to be displayed next to each other
+        instead of stacking vertically.
+      </p>
+      <div class="inline">Item 1</div>
+      <div class="inline">Item 2</div>
+      <div class="inline">Item 3</div>
+      <div class="inline">Item 4</div>
+    </div>
+  </body>
+</html>

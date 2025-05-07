@@ -1,0 +1,41 @@
+h1 {
+    color: green;
+    font-size: 50px;
+    text-align: center;
+    background-color: lightblue;
+  }
+  
+h2 {
+    color: red;
+    font-size: auto;
+    text-align: center;
+}
+  
+h3 {
+    color: black;
+    font-size: auto;
+    text-align: center;
+}
+
+address {
+    color: black;
+    font-size: auto;  
+  }
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height: 25%;
+    border-radius: 10px;
+}
+
+.inline {
+  display: inline; 
+  margin: 5px; 
+  padding: 10px; 
+  background-color: #d12121;
+  color: white;
+  border: 1px solid #ccc;
+}

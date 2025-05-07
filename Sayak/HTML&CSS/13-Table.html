@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+
+    th,td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: whitesmoke;
+    }
+
+    tr:nth-child(even) {
+      background-color: grey;
+    }
+    tr:nth-child(odd) {
+      background-color: darkgrey;
+    }
+    /* td:nth-child(even) {
+      padding:30px;
+    }
+    td:nth-child(odd) {
+      padding: 30px;
+    } */
+    .container {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .green {
+      background-color: green;
+      height: 50px;
+    }
+    .red {
+      background-color: red;
+      height: 50px;
+    }
+    .blue {
+      background-color: blue;
+      height: 50px;
+    }
+    .yellow {
+      background-color: yellow;
+      height: 50px;
+    }
+    .orange {
+      background-color: orange;
+      height: 50px;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <table border="1">
+        <tr>
+          <th>Roll No</th>
+          <th>Name</th>
+          <th>Class</th>
+          <th>Section</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>John Doe</td>
+          <td>10</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Jane Doe</td>
+          <td>10</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>John Smith</td>
+          <td>10</td>
+          <td>A</td>
+        </tr>
+      </table>
+    </div>
+    <br />
+
+    <div class="container">
+      <table border="1" style="text-align: center; width: 100%">
+        <tr>
+          <th>Sr. No.</th>
+          <th>F Name</th>
+          <th>L Name</th>
+          <th>Age</th>
+          <th>Sex</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Sid</td>
+          <td>Chatty</td>
+          <td>38</td>
+          <td>M</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Neha</td>
+          <td>Shah</td>
+          <td>24</td>
+          <td>F</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="container1">
+      <table border="1" >
+        <tr style="background-color: greenyellow;">
+          <td>
+            <div class="green"></div>
+          </td>
+          <td>
+            <div class="red"></div>
+          </td>
+          <td>
+            <div class="blue"></div>
+          </td>
+          <td>
+            <div class="yellow"></div>
+          </td>
+            <td>
+            <div class="orange"></div>
+            </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

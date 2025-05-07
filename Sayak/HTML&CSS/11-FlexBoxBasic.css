@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f9;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;            /* Height adjusted to make it a strip */
+  width: 100%;            /* Ensures the strip spans the full width of the viewport */
+  background-color: #e0e0e0;
+}
+

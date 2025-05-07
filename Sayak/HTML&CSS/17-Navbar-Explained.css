@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Primary Navbar */
+
+.NavbarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  background-color: black;
+}
+
+.nav-links  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  background-color: black;
+  gap: 20px;
+}
+
+.NavbarHeader .nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.NavbarHeader .nav-links ul > li > a {
+  text-decoration: none;
+  color: yellowgreen;
+}
+
+.NavbarHeader .nav-links ul > li > a:hover {
+  color: orange;
+}
+
+.NavbarHeader #signup p > a{        /* "#" used for IDs and "." used for classes */
+  text-decoration: none;
+  color: seagreen;
+}
+
+/* Secondry Navbar */
+
+.NavbarHeader-Secondary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  background-color: grey;
+}
+
+.nav-links-Secondary  {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 10px;
+  background-color: grey;
+}
+
+.nav-links-Secondary ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.nav-links-Secondary ul li a {
+  text-decoration: none;
+  color: #ddd;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+/* Footer Section */
+
+footer {
+  background-color: #333333;
+  color: white;
+  padding: 20px 10px;
+  text-align: left;
+}
+
+.footer-content {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  margin: 10px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li a {
+  color: lightblue;
+  text-decoration: none;
+}
+
+.copyright  {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #555555;
+  padding-top: 20px;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Explained</title>
+    <link rel="stylesheet" href="15-GridExplained.css">
+</head>
+<body>
+    <h1>Grid Explained</h1>
+    <h2>Basic Grid Layout</h2>
+    <p>
+        The eight (8) types of grid container properties are:
+        <ul>
+            <li>grid-template-columns</li>
+            <li>grid-template-rows</li>
+            <li>grid-auto-columns</li>
+            <li>grid-auto-rows</li>
+            <li>justify-content</li>
+            <li>justify-items</li>
+            <li>align-content</li>
+            <li>align-items</li>
+        </ul>
+    </p>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+    <div class="container">
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+
+    <h2>1. grid-template-columns</h2>
+    <p>Defines the number and size of the columns in a grid layout.</p>
+    <div class="grid-template-columns-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">4</div>
+        <div class="item">4</div>
+        <div class="item">4</div>
+        <div class="item">4</div>
+    </div>
+    <h2>2. grid-template-rows</h2>
+    <p>Defines the number and size of the rows in a grid layout.</p>
+    <div class="grid-template-rows-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+    <h2>3. grid-auto-columns</h2>
+    <p>Defines the size of the columns that are created automatically.</p>
+    <div class="grid-auto-columns-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+    </div>
+    <h2>4. grid-auto-rows</h2>
+    <p>
+        Defines the size of the rows that are created automatically. It is similar to grid-template-rows but for rows that are created automatically.
+    </p>
+    <div class="grid-auto-rows-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+    </div>
+    <h2>5. justify-content</h2>
+    <p>Aligns the grid items along the row axis. It can take values like start, end, center, space-between, space-around, and space-evenly.</p>
+    <div>
+        <div class="justify-content-container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">3</div>
+            <div class="item">3</div>
+        </div>
+    </div>
+    <h2>6. justify-items</h2>
+    <p>Aligns the grid items along the column axis. It can take values like start, end, center, stretch.</p>
+    <div>
+        <div class="justify-items-container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">3</div>
+            <div class="item">3</div>
+        </div>
+    </div>
+
+    <h2>7. align-content</h2>
+    <p>Aligns the grid items along the column axis. It can take values like start, end, center, stretch, space-between, space-around, and space-evenly.</p>
+    <div>
+        <div class="align-content-container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">3</div>
+            <div class="item">3</div>
+            <div class="item">3</div>
+            <div class="item">3</div>
+            <div class="item">3</div>
+            <div class="item">3</div>
+            <div class="item">3</div>
+            <div class="item">3</div>
+            <div class="item">3</div>
+            <div class="item">3</div>
+            <div class="item">3</div>
+        </div>
+    </div>
+
+    <h2>8.align-items</h2>
+    <p>
+        Aligns the grid items along the row axis. It can take values like start, end, center, stretch.
+    </p>
+    <div class="align-items-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+        <div class="item">3</div>
+    </div>
+
+</body>
+</html>

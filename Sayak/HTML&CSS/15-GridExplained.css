@@ -1,0 +1,105 @@
+.container {
+  display: grid;
+  background-color: rgb(214, 59, 42);
+  margin: 10px;
+  padding: 10px;
+}
+
+.item {
+  background-color: steelblue;
+  color: white;
+  text-align: center;
+  color: white;
+  border: 1px solid black;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.grid-template-columns-container {
+  display: grid;
+  grid-template-columns: 15% 15% 30% 40%;
+  background-color: salmon;
+  margin: 10px;
+  padding: 10px;
+}
+
+.grid-template-rows-container {
+  display: grid;
+  grid-template-rows: 25% 25% 30% 20%;
+  background-color: lightgreen;
+  margin: 10px;
+  padding: 10px;
+}
+
+.grid-auto-columns-container {
+  display: grid;
+  grid-auto-flow: column; /* Ensures items flow in a single row */
+  grid-auto-columns: 100px; /* Defines the width of automatically created columns */
+  overflow-x: auto; /* Allows horizontal scrolling if needed */
+  gap: 10px;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.grid-auto-rows-container {
+  display: grid;
+  grid-auto-flow: row; /* Ensures items flow in a single column */
+  grid-auto-rows: 50px; /* Defines the height of automatically created rows */
+  overflow-y: auto; /* Allows vertical scrolling if needed */
+  gap: 10px;
+  background-color: rgb(0, 136, 248);
+  padding: 10px;
+}
+
+.justify-content-container {
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+  justify-content: space-between; /* Distributes space between items */
+  background-color: lightcoral;
+  margin: 10px;
+  padding: 10px;
+}
+
+.justify-items-container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-items: space-between; /* Centers items within their grid area */
+  background-color: lightcoral;
+  margin: 10px;
+  padding: 10px;
+}
+
+.align-content-container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  align-content: center; /* Centers the entire grid within its container */
+  background-color: lightcoral;
+  margin: 10px;
+  padding: 10px;
+}
+
+.align-items-container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  align-items: center; /* Centers items within their grid area */
+  background-color: lightcoral;
+  margin: 10px;
+  padding: 10px;
+}
+
+
+/*
+justify-items - Aligns the content inside a grid item along the row axis
+justify-content - This property aligns the grid along the row axis
+justify-self - Aligns the content inside a grid item along the row axis
+*/
+
+
+/* 
+  grid-template-columns 
+  → Great for layouts with a known number of columns (e.g., a fixed 3-column layout).
+  
+  grid-auto-columns 
+  → Useful when items are dynamically added, and you want them to flow horizontally without manually setting the number of columns.
+*/
