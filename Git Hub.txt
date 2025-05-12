@@ -1,0 +1,7 @@
+How to publish on Git Hub:
+1. git init
+2. git status
+3. git add .
+4. git status (To check if files have uploaded correctly)
+5. git commit -m "NAME THE SESSION"
+6. Publish Branch
