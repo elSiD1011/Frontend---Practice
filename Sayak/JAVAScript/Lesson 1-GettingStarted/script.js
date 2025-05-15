@@ -66,3 +66,14 @@ var myObject = {
 console.log(myObject)
 console.log(`My name is ${myObject.name}, I am ${myObject.age} years old and I live in ${myObject.city}.`);
 
+// Practice Exercise
+var myObject = {
+    name: "Sid",
+    age: 38,
+    city: "Kolkata"
+};
+
+console.group(myObject);
+console.log("My name is " + myObject.name + ", I am " + Number(2025 - 1986)  + " years old and I live in " + myObject.city + ".");
+console.log(`My name is ${myObject.name}, I am ${myObject.age} years old and I live in ${myObject.city}.`);
+console.error("This is an example error message")

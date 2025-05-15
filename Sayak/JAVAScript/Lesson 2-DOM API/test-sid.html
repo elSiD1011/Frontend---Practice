@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <p id="paragraph"></p>
+
+    <h2 id="Para2"></h2>
+  </body>
+  <script>
+    document.getElementById("paragraph").textContent = "Hello, World!";
+    document.getElementById("Para2").textContent = "Hello, Again!";
+    var newElement = document.createElement("h1");
+    newElement.textContent = "Siddharth C";
+    document.body.appendChild(newElement);
+  </script>
+</html>
