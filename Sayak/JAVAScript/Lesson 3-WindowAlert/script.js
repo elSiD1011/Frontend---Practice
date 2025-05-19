@@ -9,9 +9,9 @@ document.getElementById("username").innerHTML = `My name is ${myName}`;
 
 // 3. window.confirm
 var isEmployee = window.confirm("Are you a Employee?");
-var MyEmployeer = window.prompt("Please enter your Employeer name");
 if (isEmployee) {
     console.log("Yes, I am a Employee");
+    var MyEmployeer = window.prompt("Please enter your Employeer name");
     document.getElementById("employeer").innerHTML = `My Employeer name is ${MyEmployeer}`;
 } else {
     console.log("No, I am not a Employee");

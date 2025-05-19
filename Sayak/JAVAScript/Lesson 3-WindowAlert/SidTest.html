@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="username"></h1>
+    <h1 id="employeer"></h1>
+  </body>
+  <script>
+    var message = "Your are great!!!";
+    window.alert(message);
+
+    var myName = window.prompt("Please enter your name");
+    console.log(myName);
+    document.getElementById("username").innerHTML = `My name is ${myName}`;
+
+    var isEmployee = window.confirm("Are you an Employee?");
+    if (isEmployee) {
+      var MyEmployeer = window.prompt("Please enter your Employeer name");
+      document.getElementById(
+        "employeer"
+      ).innerHTML = `My Employeer name is ${MyEmployeer}`;
+    } else {
+      document.getElementById("employeer").innerHTML = `I am not a Employee`;
+    }
+  </script>
+</html>
