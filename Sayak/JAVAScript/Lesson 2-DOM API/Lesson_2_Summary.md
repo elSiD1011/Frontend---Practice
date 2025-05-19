@@ -43,3 +43,8 @@ That will change your HTML body to the following:
  <p>Hello, World</p>
 </body>
 ```
+## Key Takeaways
+- The DOM is an object-oriented representation of structured documents like XML and HTML.
+- The `textContent` property of an Element is one way to output text on a web page.
+- You can create new HTML elements programmatically using JavaScript.
+- You can add new elements to the DOM using the `appendChild` method.

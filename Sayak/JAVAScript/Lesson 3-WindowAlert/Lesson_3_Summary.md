@@ -45,3 +45,10 @@ if (isEmployee) {
 - `prompt()` is used to get user input
 - `confirm()` is used for yes/no decisions
 - All these methods pause script execution until user interaction
+
+
+## Key Takeaways
+- `window.alert()`, `window.prompt()`, and `window.confirm()` are essential for user interaction in JavaScript.
+- They are blocking methods, meaning they halt script execution until the user responds.
+- Use them judiciously to avoid disrupting the user experience.
+- Always validate user input from `prompt()` to ensure data integrity.
