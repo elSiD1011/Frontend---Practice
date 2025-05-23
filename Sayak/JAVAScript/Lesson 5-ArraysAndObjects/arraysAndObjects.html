@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Arrays And Objects</h1>
+  </body>
+  <script>
+    // Array:In JavaScript, arrays are a special type of object. An array is a list of values, which can be of any type. It is a collection of data items of the same type. The values in an array are called elements. Each element in an array has a numeric index, which starts at 0.
+
+    var fruits = ["apple", "banana", "cherry"];
+    console.log(fruits);
+    console.log(fruits[0]);
+    console.log(fruits[2]);
+
+    var myArray = []; // empty array
+
+    var favoriteFruits = ["apple", "orange", "strawberry"];
+    var carsInParkingLot = ["Toyota", "Ferrari", "Lexus"];
+    var employees = ["Billy", "Bob", "Joe"];
+    var primeNumbers = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31];
+    var randomVariables = [2, "Sayak", undefined, null, true, 2.51];
+
+    // Object: An object is a collection of properties, where each property has a name and a value. The name of a property is called its key. The value of a property can be any data type, including another object.
+    var person = {
+      firstName: "John",
+      lastName: "Doe",
+      age: 30,
+      eyeColor: "blue",
+      newObject: {
+        name: "Sayak",
+        age: 20,
+      },
+    };
+
+    var mercedesCClass = {
+      manufacturer: "Mercedes",
+      model: "C-Class",
+      year: 2020,
+      color: "black",
+      price: 40000,
+    };
+
+    // Accessing object properties using dot notation
+    console.log(mercedesCClass);
+    console.log(mercedesCClass.price);
+    console.log(mercedesCClass.model);
+    
+    // Accessing object properties using bracket notation
+    console.log(mercedesCClass["manufacturer"]);
+    console.log(mercedesCClass["year"]);
+    console.log(mercedesCClass["color"]);
+  </script>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    // Basic info about strings
+    // Strings : The string is a primitive data type in JavaScript. It is used to represent text data. Strings are immutable, meaning that once they are created, they cannot be changed. However, you can create new strings based on existing ones.
+
+    // Creating strings
+    let str1 = "Hello";
+    let str2 = "World";
+    let str3 = `Hello World`;
+
+    // Accessing characters in a string
+    console.log(str1[0]); // H
+    console.log(str2[1]); // o
+
+    // String length
+    console.log(str1.length); // 5
+
+    // String methods
+    console.log(str1.toUpperCase()); // HELLO
+    console.log(str2.toLowerCase()); // world
+
+    // Strings can be created from other types using the String() function.
+    var intString = String(32); // "32"
+    var booleanString = String(true); // "true"
+    var nullString = String(null); // "null"
+    // Or, toString() can be used to convert Numbers, Booleans or Objects to Strings.
+    var intString = (5232).toString(); // "5232"
+    var booleanString = false.toString(); // "false"
+    var objString = {}.toString(); // "[object Object]"
+
+    // if you want to check the type of a variable, you can use the typeof operator.
+    // for example :
+    var myname = "Sayak";
+    console.log(myname, typeof myname); // Sayak string
+    var myage = (23).toString(); // "23"
+    var myrollno = Number("87232");
+    console.log(myrollno, typeof myrollno); // 87232 number
+
+    // String concatenation
+    //String concatenation can be done with the + concatenation operator, or with the built-in concat() method on the String object prototype.
+
+    var foo = "Foo";
+    var bar = " Bar";
+    console.log(foo + bar); // => "FooBar"
+    console.log(foo + " " + bar); // => "Foo Bar"
+    console.log(foo.concat(bar)); // => "FooBar"
+
+    // Strings can be created using template literals (backticks) `hello`.
+    var greeting = `Hello`;
+    
+    // With template literals, you can do string interpolation using ${variable} inside template literals:
+    var place = `World`;
+    var greet = `Hello ${place}!`
+    console.log(greet); // "Hello World!"
+  </script>
+</html>

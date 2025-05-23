@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+      // Variables are what make up most of JavaScript. These variables make up things from numbers to objects, which are all over JavaScript to make one's life much easier.
+
+      // in short, variables are containers for storing data values.
+      // In JavaScript, there are three ways to declare a variable: var, let, and const.
+
+      // var: The var keyword is used to declare a variable that can be re-assigned. It is function-scoped or globally scoped. In short var is used to declare a variable that can be changed later and can be accessed outside the block.
+      var name = "Sayak";
+      var name = "Siddharth"; // re-declaring the variable
+      console.log(name); // Output: Sayak
+
+      // let: The let keyword is used to declare a variable that can be re-assigned. It is block-scoped. In short let is used to declare a variable that can be changed later but not outside the block.
+      let age = 25;
+      console.log(age); // Output: 25   
+
+      // const: The const keyword is used to declare a variable that cannot be re-assigned. It is block-scoped. In short const is used to declare a variable that cannot be changed later and can be accessed outside the block.
+      const country = "India";
+      console.log(country); // Output: India
+
+      // Note: Variables declared with const must be initialized at the time of declaration. If you try to declare a variable with const without initializing it, you will get an error.
+
+      // Using a Variable
+      var number1 = 5;
+      number1 = 3;
+    // Here, we defined a number called "number1" which was equal to 5. However, on the second line, we changed the value to 3.
+
+    let number2 = 10;
+    number2 = 20;
+    // Here, we defined a number called "number2" which was equal to 10. However, on the second line, we changed the value to 20.
+
+    const number3 = 15;
+    console.log("🚀 ~ number3:", number3)
+    // number3 = 25; // This will throw an error because we cannot change the value of a constant variable.
+
+    console.log(number1 + number2 + number3);
+
+    // We can also add strings which will concatenate them, or put them together. For example:
+    var myString = "My Name is" + " Siddhart"; // "I am a string!"
+    console.log("🚀 ~ myString:", myString);
+
+    // Types of Variables
+    var myInteger = 12; // 32-bit number (from -2,147,483,648 to 2,147,483,647)
+    var myLong = 9310141419482; // 64-bit number (from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807)
+    var myFloat = 5.5; // 32-bit floating-point number (decimal)
+    var myDouble = 9310141419482.22; // 64-bit floating-point number
+    var myBoolean = true; // 1-bit true/false (0 or 1)
+    var myBoolean2 = false;
+    var myNotANumber = NaN;
+    var NaN_Example = 0/0; // NaN: Division by Zero is not possible
+    var notDefined; // undefined: we didn't define it to anything yet
+    window.alert(aRandomVariable); // undefined
+    var myNull = null; // null
+
+    // The difference between undefined and null is that undefined means a variable has been declared but has not yet been assigned a value, while null is an assignment value that represents no value. In other words, undefined is a type itself, while null is an object.
+
+  </script>
+</html>
