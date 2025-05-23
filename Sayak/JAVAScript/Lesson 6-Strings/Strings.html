@@ -59,5 +59,71 @@
     var place = `World`;
     var greet = `Hello ${place}!`
     console.log(greet); // "Hello World!"
+
+
+    // String interpolation with template literals
+    var name = "Sayak";
+    var age = 23;
+    var greeting = `Hello, my name is ${name} and I am ${age} years old.`;
+    console.log(greeting); // Hello, my name is Sayak and I am 23 years old.
+
+    // string reverse
+    // To reverse a string, you can convert it to an array, reverse the array, and then join it back into a string.
+    function reverseString(str) {
+      return str.split(",").reverse().join("");
+    }
+
+
+    var originalString = "Hello,World";
+    var reversedString = reverseString(originalString);
+    console.log("🚀 ~ reversedString:", reversedString)
+    console.log(originalString.split("").reverse().join("")); // "olleH"
+
+
+    // : Access character at index in string
+    var CharAt = "Hello, World!";
+    console.log(CharAt.charAt(7));
+    // alternatively, you can use the bracket notation to access a character at a specific index in a string.
+    console.log(CharAt[7]);
+
+
+    // : String slice
+    // The slice() method extracts a part of a string and returns it as a new string, without modifying the original string.
+    var str = "Siddharth Malhotra";
+    console.log(str.slice(0, 9));
+
+    // : String substring
+    // The substring() method returns the part of the string between the two specified indices, or to the end of the string.
+    var str = "SAYAK MALLICK";
+    console.log(str.substring(0, 5));
+
+
+    // : String substr
+    // The substr() method returns the characters in a string beginning at the specified location through the specified number of characters.
+    var str = "SAYAK MALLICK";
+    console.log(str.substr(0, 5)); // "SAYAK"
+
+    // : String indexOf
+    // The indexOf() method returns the index of the first occurrence of a specified text in a string.
+    var str = "SAYAK MALLICK";
+    console.log(str.indexOf("Y"));
+
+    // : String lastIndexOf
+    // The lastIndexOf() method returns the index of the last occurrence of a specified text in a string.
+    var str = "SAYAK MALLICK";
+    console.log(str.lastIndexOf("A"));
+
+
+    // : String replace
+    // The replace() method replaces a specified value with another value in a string.
+    var str = "SAYAK";
+    console.log(str.replace("SAYAK", "SIDDHART")); // "SAYAK MALLICK"
+
+    // : String trim
+    // The trim() method removes whitespace from both sides of a string.
+    var str = "   Hello World!   ";
+    console.log(str.trim());
+
+
   </script>
 </html>
