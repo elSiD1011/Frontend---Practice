@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Functions in JavaScript</h1>
+  <p>Functions are a fundamental part of JavaScript, allowing you to encapsulate code for reuse and organization.</p>
+  <h1>
+    The sum will be <span id="addition"></span>
+  </h1>
+</body>
+
+<script>
+  // function : Functions are reusable blocks of code that perform a specific task. 
+  // They can take inputs (parameters) and return outputs (return values).
+  // Function reuse allows you to write code once and use it multiple times, which makes your code cleaner and more efficient. for example of sum function
+
+
+  // Function declaration pseudo code
+  // function functionName(parameter1, parameter2) {
+  function sum(a, b) {
+    return a + b; // we used the return statement to return the sum of a and b
+  }
+
+  // using window prompt to get user input
+  let num1 = parseInt(window.prompt("Enter first number:"));
+  let num2 = parseInt(window.prompt("Enter second number:"));
+  console.log(sum(num1, num2)); // Function call with user input
+  document.getElementById("addition").innerText = sum(num1, num2); // Displaying the result in the HTML
+  document.writeln("The sum is: " + sum(2, 3)); // Displaying the result in the document
+
+  
+  // console.log(sum(2, 3)); // Function call
+  // console.log(sum(10, 20)); // Function call
+  // console.log(sum(100, 200)); // Function call
+
+</script>
+</html>
