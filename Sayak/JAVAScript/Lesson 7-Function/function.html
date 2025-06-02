@@ -1,41 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1>Functions in JavaScript</h1>
-  <p>Functions are a fundamental part of JavaScript, allowing you to encapsulate code for reuse and organization.</p>
-  <h1>
-    The sum will be <span id="addition"></span>
-  </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Functions in JavaScript</h1>
+    <p>
+      Functions are a fundamental part of JavaScript, allowing you to
+      encapsulate code for reuse and organization.
+    </p>
+    <h1>The sum will be <span id="addition"></span></h1>
+  </body>
 
-<script>
-  // function : Functions are reusable blocks of code that perform a specific task. 
-  // They can take inputs (parameters) and return outputs (return values).
-  // Function reuse allows you to write code once and use it multiple times, which makes your code cleaner and more efficient. for example of sum function
+  <script>
+    // function : Functions are reusable blocks of code that perform a specific task.
+    // They can take inputs (parameters) and return outputs (return values).
+    // Function reuse allows you to write code once and use it multiple times, which makes your code cleaner and more efficient. for example of sum function
+
+    // Function declaration pseudo code
+    // function functionName(parameter1, parameter2) {
+    function sum(a, b) {
+      return a + b; // we used the return statement to return the sum of a and b
+    }
+
+    // using window prompt to get user input
+    let num1 = parseInt(window.prompt("Enter first number:"));
+    let num2 = parseInt(window.prompt("Enter second number:"));
+    console.log(sum(num1, num2)); // Function call with user input
+    document.getElementById("addition").innerText = sum(num1, num2); // Displaying the result in the HTML
+    document.writeln("The sum is: " + sum(2, 3)); // Displaying the result in the document
+
+    // console.log(sum(2, 3)); // Function call
+    // console.log(sum(10, 20)); // Function call
+    // console.log(sum(100, 200)); // Function call
+
+    // Function calls are where you execute the function with specific arguments. Function calls can be made with different arguments to get different results.
+
+    // Types of functions in JavaScript:
+    // 1. Function Declaration: A named function that can be called anywhere in the code.
+    // 2. Function Expression: A function defined within an expression, often assigned to a variable.
+    // 3. Arrow Function: A concise syntax for writing functions introduced in ES6 in the year 2015.
+    // 4. Anonymous Function: A function without a name, often used as a callback or in event handling.
+    // 5. IIFE (Immediately Invoked Function Expression): A function that runs as soon as it is defined.
+    // 6. Callback Function: A function passed as an argument to another function, executed after the completion of that function.
+    // 7. Higher-Order Function: A function that takes another function as an argument or returns a function as its result.
+    // 8. Generator Function: A special type of function that can pause and resume its execution, allowing for the generation of a sequence of values.
+    // 9. Async Function: A function that allows asynchronous operations using the async/await syntax.
+    // 10. Method: A function that is a property of an object, allowing for object-oriented programming.
+    // 11. Constructor Function: A function used to create objects, typically with the `new` keyword.
+    // 12. Recursive Function: A function that calls itself to solve a problem, often used for tasks like traversing data structures or calculating factorials.
+    // 13. Pure Function: A function that always produces the same output for the same input and has no side effects.
+    // 14. Impure Function: A function that may produce different outputs for the same input or has side effects, such as modifying global variables or performing I/O operations.
+    // 15. Closure: A function that retains access to its lexical scope, even when the function is executed outside that scope.
+
+    // 1 Function Declaration or Named Function
+    function greet(name) {
+      return "Hello, " + name + "!";
+    }
+
+    // 2 Function Expression
+    const square = function (x) {
+      return x * x;
+    };
+
+    let x = 4;
+    console.log(square(x));
+
+    // 3 Arrow Function
+    const multiply = (x, y, z) => x * y * z;
+    console.log(multiply(5, 10, 2));
+
+    // 4 Anonymous Function
+
+    const myFunction = function (x, y) {
+      return x + y;
+    };
+    console.log(myFunction(5, 3)); // Output: 8
+
+    // 5 IIFE (Immediately Invoked Function Expression)
+    (function () {
+      let a = 7; // it does not need to be called, it runs immediately, also not needed to return anything
+      let b = 3;
+      console.log("The sum of a and b is: " + (a + b)); // Output: The sum of a and b is: 10
+    })();
 
 
-  // Function declaration pseudo code
-  // function functionName(parameter1, parameter2) {
-  function sum(a, b) {
-    return a + b; // we used the return statement to return the sum of a and b
-  }
+    function greet(name, callback) {
+      console.log("Hello, " + name + "!");
+      callback();
+    }
 
-  // using window prompt to get user input
-  let num1 = parseInt(window.prompt("Enter first number:"));
-  let num2 = parseInt(window.prompt("Enter second number:"));
-  console.log(sum(num1, num2)); // Function call with user input
-  document.getElementById("addition").innerText = sum(num1, num2); // Displaying the result in the HTML
-  document.writeln("The sum is: " + sum(2, 3)); // Displaying the result in the document
+    function sayGoodbye() {
+      console.log("Goodbye!");
+    }
 
-  
-  // console.log(sum(2, 3)); // Function call
-  // console.log(sum(10, 20)); // Function call
-  // console.log(sum(100, 200)); // Function call
+    greet("John", sayGoodbye);
 
-</script>
+    // 7 Higher-Order Function
+
+    function fun() {
+      console.log("Hello, World!");
+    }
+    function fun2(action) {
+      action();
+      action();
+    }
+
+    fun2(fun);
+  </script>
 </html>
